@@ -1,9 +1,40 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+function addMeToEnd(names) {
+  names.push("Colin");
+}
 
+function addMeToStart(names) {
+  names.unshift("Colin");
+}
 
+function changeLast(elements, value) {
+  elements[elements.length - 1] = value;
+}
 
+function changeAllValuesTo(elements, value) {
+  for (let i = 0; i < elements.length; i++){
+    elements[i] = value;
+  }
+}
+
+function oddOrEven(elements) {
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i] % 2 === 0) {
+      elements[i] = "even";
+    }
+    else {
+      elements[i] = "odd";
+    }
+  }
+}
+
+function changeNextThreeToValue(start, elements, value) {
+  for (let i = start; i < start + 3; i++){
+    elements[i] = value;
+  }
+}
 
 
 /*********************************
